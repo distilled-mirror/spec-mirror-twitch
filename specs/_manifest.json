@@ -1,0 +1,121 @@
+{
+  "source": "https://dev.twitch.tv/docs/api/reference.md",
+  "pages": [
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/ads.md",
+      "file": "api/reference/ads.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/analytics.md",
+      "file": "api/reference/analytics.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/bits.md",
+      "file": "api/reference/bits.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/ccls.md",
+      "file": "api/reference/ccls.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/channel-points.md",
+      "file": "api/reference/channel-points.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/channels.md",
+      "file": "api/reference/channels.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/charity.md",
+      "file": "api/reference/charity.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/chat.md",
+      "file": "api/reference/chat.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/clips.md",
+      "file": "api/reference/clips.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/conduits.md",
+      "file": "api/reference/conduits.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/entitlements.md",
+      "file": "api/reference/entitlements.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/eventsub.md",
+      "file": "api/reference/eventsub.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/extensions.md",
+      "file": "api/reference/extensions.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/games.md",
+      "file": "api/reference/games.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/goals.md",
+      "file": "api/reference/goals.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/guest-star.md",
+      "file": "api/reference/guest-star.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/hype-train.md",
+      "file": "api/reference/hype-train.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/moderation.md",
+      "file": "api/reference/moderation.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/polls.md",
+      "file": "api/reference/polls.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/predictions.md",
+      "file": "api/reference/predictions.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/raids.md",
+      "file": "api/reference/raids.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/schedule.md",
+      "file": "api/reference/schedule.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/search.md",
+      "file": "api/reference/search.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/streams.md",
+      "file": "api/reference/streams.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/subscriptions.md",
+      "file": "api/reference/subscriptions.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/teams.md",
+      "file": "api/reference/teams.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/users.md",
+      "file": "api/reference/users.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/videos.md",
+      "file": "api/reference/videos.md"
+    },
+    {
+      "url": "https://dev.twitch.tv/docs/api/reference/whispers.md",
+      "file": "api/reference/whispers.md"
+    }
+  ]
+}
