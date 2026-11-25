@@ -24,7 +24,7 @@ Get access to analytics on your Extension and games on Twitch.
 Get access to information involving Bits products and transactions.
 
 - [Get Cheermotes](https://dev.twitch.tv/docs/api/reference/bits.md#get-cheermotes): Gets a list of Cheermotes that users can use to cheer Bits.
-- [Get Custom Power-up](https://dev.twitch.tv/docs/api/reference/bits.md#get-custom-power-up): Gets a list of custom Power-ups that the specified broadcaster created.
+- [Get Custom Power-up](https://dev.twitch.tv/docs/api/reference/bits.md#get-custom-power-up): Gets a list of Custom Power-ups that the specified broadcaster created.
 - [Get Bits Leaderboard](https://dev.twitch.tv/docs/api/reference/bits.md#get-bits-leaderboard): Gets the Bits leaderboard for the authenticated broadcaster.
 - [Get Extension Transactions](https://dev.twitch.tv/docs/api/reference/bits.md#get-extension-transactions): Gets an extension's list of transactions.
 

@@ -44,7 +44,7 @@ Requires one of the following:
   - `data.broadcaster_name` — String. The broadcaster's display name.
   - `data.charity_name` — String. The charity's name.
   - `data.charity_description` — String. A description of the charity.
-  - `data.charity_logo` — String. A URL to an image of the charity's logo. The image's type is PNG and its size is 100px X 100px.
+  - `data.charity_logo` — String. A URL to an image of the charity's logo. The image is typically a PNG that's 100px X 100px. If larger, it is recommended to squash the image and present as a square size.
   - `data.charity_website` — String. A URL to the charity's website.
   - `data.current_amount` — Object. The current amount of donations that the campaign has received.
     - `data.current_amount.value` — Integer. The monetary amount. The amount is specified in the currency's minor unit. For example, the minor units for USD is cents, so if the amount is $5.50 USD, `value` is set to 550.
@@ -186,8 +186,8 @@ curl -X GET 'https://api.twitch.tv/helix/charity/donations?broadcaster_id=123456
 {
   "data": [
     {
-      "id": "a1b2c3-aabb-4455-d1e2f3",
-      "campaign_id": "123-abc-456-def",
+      "id": "2DQ5PyjPHh28hVu4jvFq8gIsPqL-5678",
+      "campaign_id": "2DQ5PyjPHh28hVu4jvFq8gIsPqL",
       "user_id": "5678",
       "user_login": "cool_user",
       "user_name": "Cool_User",
@@ -198,8 +198,8 @@ curl -X GET 'https://api.twitch.tv/helix/charity/donations?broadcaster_id=123456
       }
     },
     {
-      "id": "z1y2x3-ccdd-6677-d1e2f3",
-      "campaign_id": "123-abc-456-def",
+      "id": "2DQ5PyjPHh28hVu4jvFq8gIsPqL-8765",
+      "campaign_id": "2DQ5PyjPHh28hVu4jvFq8gIsPqL",
       "user_id": "8765",
       "user_login": "cool_user2",
       "user_name": "Cool_User2",

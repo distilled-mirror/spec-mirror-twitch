@@ -183,9 +183,9 @@ curl -X GET 'https://api.twitch.tv/helix/bits/cheermotes' \
 
 ## Get Custom Power-up {#get-custom-power-up}
 
-Gets a list of custom Power-ups that the specified broadcaster created.
+Gets a list of Custom Power-ups that the specified broadcaster created.
 
-> **Note** A channel may offer a maximum of 50 custom Power-ups, which includes both enabled and disabled Power-ups.
+> **Note** A channel may offer a maximum of 50 Custom Power-ups, which includes both enabled and disabled Power-ups.
 
 ### Endpoint
 
@@ -199,7 +199,7 @@ Requires one of the following:
 
 ### Query Parameters
 
-- `broadcaster_id` — String, **Required**. The ID of the broadcaster whose custom Power-ups you want to get. This ID must match the user ID found in the OAuth token.
+- `broadcaster_id` — String, **Required**. The ID of the broadcaster whose Custom Power-ups you want to get. This ID must match the user ID found in the OAuth token.
 - `id` — String
   A list of IDs to filter the Power-ups by. To specify more than one ID, include this
   parameter for each Power-up you want to get. For example, 'id=1234&id=5678'. You may specify
@@ -210,42 +210,42 @@ Requires one of the following:
 
 ### Response Body
 
-- `data` — Object[]. A list of custom Power-ups. The list is in ascending order by `id`. If the broadcaster hasn't created custom Power-ups, the list is empty.
+- `data` — Object[]. A list of Custom Power-ups. The list is in ascending order by `id`. If the broadcaster hasn't created Custom Power-ups, the list is empty.
   - `data.broadcaster_id` — String. The ID that uniquely identifies the broadcaster.
   - `data.broadcaster_login` — String. The broadcaster's login name.
   - `data.broadcaster_name` — String. The broadcaster's display name.
-  - `data.id` — String. The ID that uniquely identifies this custom Power-up.
-  - `data.title` — String. The title of the custom Power-up.
-  - `data.prompt` — String. The prompt shown to the viewer when they redeem the custom Power-up if user input is required (see the `is_user_input_required` field).
-  - `data.bits` — Integer. The amount of Bits for the custom Power-up.
-  - `data.image` — Object, Nullable. A set of custom images for the custom Power-up. This field is **null** if the broadcaster didn't upload images.
+  - `data.id` — String. The ID that uniquely identifies this Custom Power-up.
+  - `data.title` — String. The title of the Custom Power-up.
+  - `data.prompt` — String. The prompt shown to the viewer when they redeem the Custom Power-up if user input is required (see the `is_user_input_required` field).
+  - `data.bits` — Integer. The amount of Bits for the Custom Power-up.
+  - `data.image` — Object, Nullable. A set of custom images for the Custom Power-up. This field is **null** if the broadcaster didn't upload images.
     - `data.image.url_1x` — String. The URL to a small version of the image.
     - `data.image.url_2x` — String. The URL to a medium version of the image.
     - `data.image.url_4x` — String. The URL to a large version of the image.
-  - `data.default_image` — Object. A set of default images for the custom Power-up.
+  - `data.default_image` — Object. A set of default images for the Custom Power-up.
     - `data.default_image.url_1x` — String. The URL to a small version of the image.
     - `data.default_image.url_2x` — String. The URL to a medium version of the image.
     - `data.default_image.url_4x` — String. The URL to a large version of the image.
-  - `data.background_color` — String. The background color to use for the custom Power-up. The color is in Hex format (for example, #00E5CB).
-  - `data.is_enabled` — Boolean. A Boolean value that determines whether the custom Power-up is enabled. Is **true** if enabled; otherwise, **false**. Disabled custom Power-ups aren't shown to the user.
-  - `data.is_user_input_required` — Boolean. A Boolean value that determines whether the user must enter information when redeeming the custom Power-up. Is **true** if the user is prompted.
+  - `data.background_color` — String. The background color to use for the Custom Power-up. The color is in Hex format (for example, #00E5CB).
+  - `data.is_enabled` — Boolean. A Boolean value that determines whether the Custom Power-up is enabled. Is **true** if enabled; otherwise, **false**. Disabled Custom Power-ups aren't shown to the user.
+  - `data.is_user_input_required` — Boolean. A Boolean value that determines whether the user must enter information when redeeming the Custom Power-up. Is **true** if the user is prompted.
   - `data.max_per_stream_setting` — Object. The settings used to determine whether to apply a maximum to the number of redemptions allowed per live stream.
-    - `data.max_per_stream_setting.is_enabled` — Boolean. A Boolean value that determines whether the custom Power-up applies a limit on the number of redemptions allowed per live stream. Is **true** if the custom Power-up applies a limit.
+    - `data.max_per_stream_setting.is_enabled` — Boolean. A Boolean value that determines whether the Custom Power-up applies a limit on the number of redemptions allowed per live stream. Is **true** if the Custom Power-up applies a limit.
     - `data.max_per_stream_setting.max_per_stream` — Int64. The maximum number of redemptions allowed per live stream.
   - `data.max_per_user_per_stream_setting` — Object. The settings used to determine whether to apply a maximum to the number of redemptions allowed per user per live stream.
-    - `data.max_per_user_per_stream_setting.is_enabled` — Boolean. A Boolean value that determines whether the custom Power-up applies a limit on the number of redemptions allowed per user per live stream. Is **true** if the custom Power-up applies a limit.
+    - `data.max_per_user_per_stream_setting.is_enabled` — Boolean. A Boolean value that determines whether the Custom Power-up applies a limit on the number of redemptions allowed per user per live stream. Is **true** if the custom Power-up applies a limit.
     - `data.max_per_user_per_stream_setting.max_per_user_per_stream` — Int64. The maximum number of redemptions allowed per user per live stream.
   - `data.global_cooldown_setting` — Object. The settings used to determine whether to apply a cooldown period between redemptions and the length of the cooldown.
     - `data.global_cooldown_setting.is_enabled` — Boolean. A Boolean value that determines whether to apply a cooldown period. Is **true** if a cooldown period is enabled.
     - `data.global_cooldown_setting.global_cooldown_seconds` — Int64. The cooldown period, in seconds.
-  - `data.is_paused` — Boolean. A Boolean value that determines whether the custom Power-up is currently paused. Is **true** if the custom Power-up is paused. Viewers can't redeem paused custom Power-ups.
-  - `data.is_in_stock` — Boolean. A Boolean value that determines whether the custom Power-up is currently in stock. Is **true** if the custom Power-up is in stock. Viewers can't redeem out of stock custom Power-ups.
+  - `data.is_paused` — Boolean. A Boolean value that determines whether the Custom Power-up is currently paused. Is **true** if the Custom Power-up is paused. Viewers can't redeem paused Custom Power-ups.
+  - `data.is_in_stock` — Boolean. A Boolean value that determines whether the Custom Power-up is currently in stock. Is **true** if the Custom Power-up is in stock. Viewers can't redeem out of stock custom Power-ups.
   - `data.redemptions_redeemed_current_stream` — Integer, Nullable. The number of redemptions redeemed during the current live stream. The number counts against the `max_per_stream_setting` limit. This field is **null** if the broadcaster's stream isn't live or `max_per_stream_setting` isn't enabled.
-  - `data.cooldown_expires_at` — String, Nullable. The timestamp of when the cooldown period expires. Is **null** if the custom Power-up isn't in a cooldown state. See the `global_cooldown_setting` field.
+  - `data.cooldown_expires_at` — String, Nullable. The timestamp of when the cooldown period expires. Is **null** if the Custom Power-up isn't in a cooldown state. See the `global_cooldown_setting` field.
 
 ### Response Codes
 
-- **200 OK** — Successfully retrieved the broadcaster's list of custom Power-ups.
+- **200 OK** — Successfully retrieved the broadcaster's list of Custom Power-ups.
 - **400 Bad Request**
   - The *broadcaster_id* query parameter is required.
   - The request exceeds the maximum number of *id* query parameters that you may specify.
@@ -258,7 +258,7 @@ Requires one of the following:
 - **403 Forbidden**
   - The broadcaster is not a partner or affiliate.
 - **404 Not Found**
-  - All of the custom Power-ups specified using the *id* query parameter were not found.
+  - All of the Custom Power-ups specified using the *id* query parameter were not found.
 - **500 Internal Server Error** — An internal server error occurred. Please report this issue on [our issue tracker](https://github.com/twitchdev/issues/).
 
 ### Request Example

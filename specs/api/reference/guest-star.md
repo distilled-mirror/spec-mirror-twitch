@@ -44,7 +44,7 @@ Requires one of the following:
 ### Response Body
 
 - `data` — Object[]. A list that contains the channel's Guest Star settings.
-  - `data.is_moderator_send_live_enabled` — Boolean. Flag determining if Guest Star moderators have access to control whether a guest is live once assigned to a slot.
+  - `data.is_moderator_send_live_enabled` — Boolean. Flag determining if [Guest Star moderators](https://help.twitch.tv/s/article/stream-together#settings:~:text=Stream%20Together%20mods%20can%20take%20actions%20like%20inviting%20guests%2C%20reporting%20guests%2C%20removing%20guests%2C%20muting%20guests%2C%20and%20turning%20off%20guests%20video.) can make a guest live once the guest is assigned to a slot.
   - `data.slot_count` — Integer. Number of slots the Guest Star call interface will allow the host to add to a call. Required to be between 1 and 6.
   - `data.is_browser_source_audio_enabled` — Boolean. Flag determining if Browser Sources subscribed to sessions on this channel should output audio
   - `data.group_layout` — String. This setting determines how the guests within a session should be laid out within the browser source. Layouts other than the ones listed here are reported as "TILED".
@@ -112,7 +112,7 @@ Requires one of the following:
 
 ### Request Body
 
-- `is_moderator_send_live_enabled` — Boolean. Flag determining if Guest Star moderators have access to control whether a guest is live once assigned to a slot.
+- `is_moderator_send_live_enabled` — Boolean. Flag determining if [Guest Star moderators](https://help.twitch.tv/s/article/stream-together#settings:~:text=Stream%20Together%20mods%20can%20take%20actions%20like%20inviting%20guests%2C%20reporting%20guests%2C%20removing%20guests%2C%20muting%20guests%2C%20and%20turning%20off%20guests%20video.) can make a guest live once the guest is assigned to a slot.
 - `slot_count` — Integer. Number of slots the Guest Star call interface will allow the host to add to a call. Required to be between 1 and 6.
 - `is_browser_source_audio_enabled` — Boolean. Flag determining if Browser Sources subscribed to sessions on this channel should output audio
 - `group_layout` — String. This setting determines how the guests within a session should be laid out within the browser source.
@@ -334,7 +334,7 @@ Requires one of the following:
 
 ### Response Body
 
-- `data` — Session[]. Summary of the session details. The list is empty if the broadcaster has no active session, or if the user in *moderator_id* isn't the broadcaster, a guest or invited user in the session, or one of the broadcaster's Guest Star moderators.
+- `data` — Session[]. Summary of the session details. The list is empty if the broadcaster has no active session, or if the user in *moderator_id* isn't the broadcaster, a guest or invited user in the session, or one of the broadcaster's [Guest Star moderators](https://help.twitch.tv/s/article/stream-together#settings:~:text=Stream%20Together%20mods%20can%20take%20actions%20like%20inviting%20guests%2C%20reporting%20guests%2C%20removing%20guests%2C%20muting%20guests%2C%20and%20turning%20off%20guests%20video.).
   - `data.id` — String. ID uniquely representing the Guest Star session.
   - `data.guests` — Object[]. List of guests currently interacting with the Guest Star session.
     - `data.guests.slot_id` — String
@@ -352,7 +352,7 @@ Requires one of the following:
       broadcasting software.
     - `data.guests.is_live` — Boolean. Flag determining whether or not the guest is visible in the browser source in the host's streaming software.
     - `data.guests.user_id` — String. User ID of the guest assigned to this slot.
-    - `data.guests.volume` — Integer. Value from 0 to 100 representing the host's volume setting for this guest.
+    - `data.guests.volume` — Integer. Value from 0 to 200 representing the host's volume setting for this guest. The default is **100**.
     - `data.guests.assigned_at` — String. Timestamp when this guest was assigned a slot in the session.
     - `data.guests.audio` — Object. Information about the guest's audio settings
       - `data.guests.audio.is_host_enabled` — Boolean. Flag determining whether the host is allowing the guest's audio to be seen or heard within the session.
@@ -471,7 +471,7 @@ Requires one of the following:
       broadcasting software.
     - `data.guests.is_live` — Boolean. Flag determining whether or not the guest is visible in the browser source in the host's streaming software.
     - `data.guests.user_id` — String. User ID of the guest assigned to this slot.
-    - `data.guests.volume` — Integer. Value from 0 to 100 representing the host's volume setting for this guest.
+    - `data.guests.volume` — Integer. Value from 0 to 200 representing the host's volume setting for this guest. The default is **100**.
     - `data.guests.assigned_at` — String. Timestamp when this guest was assigned a slot in the session.
     - `data.guests.audio` — Object. Information about the guest's audio settings
       - `data.guests.audio.is_host_enabled` — Boolean. Flag determining whether the host is allowing the guest's audio to be seen or heard within the session.
@@ -573,7 +573,7 @@ Requires one of the following:
       broadcasting software.
     - `data.guests.is_live` — Boolean. Flag determining whether or not the guest is visible in the browser source in the host's streaming software.
     - `data.guests.user_id` — String. User ID of the guest assigned to this slot.
-    - `data.guests.volume` — Integer. Value from 0 to 100 representing the host's volume setting for this guest.
+    - `data.guests.volume` — Integer. Value from 0 to 200 representing the host's volume setting for this guest. The default is **100**.
     - `data.guests.assigned_at` — String. Timestamp when this guest was assigned a slot in the session.
     - `data.guests.audio` — Object. Information about the guest's audio settings
       - `data.guests.audio.is_host_enabled` — Boolean. Flag determining whether the host is allowing the guest's audio to be seen or heard within the session.
@@ -719,7 +719,7 @@ Requires one of the following:
 - **401 Unauthorized**
   - The ID in *moderator_id* must match the user ID in the user access token.
   - The user access token must include the **channel:manage:guest_star** scope if *moderator_id* matches *broadcaster_id*, or the **moderator:manage:guest_star** scope if it doesn't.
-- **403 Forbidden** — The user in *moderator_id* isn't in the session, and isn't the broadcaster or one of the broadcaster's Guest Star moderators
+- **403 Forbidden** — The user in *moderator_id* isn't in the session, and isn't the broadcaster or one of the broadcaster's [Guest Star moderators](https://help.twitch.tv/s/article/stream-together#settings:~:text=Stream%20Together%20mods%20can%20take%20actions%20like%20inviting%20guests%2C%20reporting%20guests%2C%20removing%20guests%2C%20muting%20guests%2C%20and%20turning%20off%20guests%20video.)
 - **404 Not Found** — _session_id_ not found, or the session has ended
 
 ### Request Example
@@ -768,7 +768,7 @@ Requires one of the following:
   - The ID in *moderator_id* must match the user ID in the user access token.
   - The user access token must include the **channel:manage:guest_star** scope if *moderator_id* matches *broadcaster_id*, or the **moderator:manage:guest_star** scope if it doesn't.
 - **403 Forbidden**
-  - *moderator_id* is not a Guest Star moderator
+  - *moderator_id* is not a [Guest Star moderator](https://help.twitch.tv/s/article/stream-together#settings:~:text=Stream%20Together%20mods%20can%20take%20actions%20like%20inviting%20guests%2C%20reporting%20guests%2C%20removing%20guests%2C%20muting%20guests%2C%20and%20turning%20off%20guests%20video.)
   - The request is attempting to modify a restricted slot
 - **404 Not Found** — The user in _guest_id_ doesn't have a slot in the session
 
@@ -821,7 +821,7 @@ Requires one of the following:
   - The ID in *moderator_id* must match the user ID in the user access token.
   - The user access token must include the **channel:manage:guest_star** scope if *moderator_id* matches *broadcaster_id*, or the **moderator:manage:guest_star** scope if it doesn't.
 - **403 Forbidden**
-  - *moderator_id* is not a Guest Star moderator
+  - *moderator_id* is not a [Guest Star moderator](https://help.twitch.tv/s/article/stream-together#settings:~:text=Stream%20Together%20mods%20can%20take%20actions%20like%20inviting%20guests%2C%20reporting%20guests%2C%20removing%20guests%2C%20muting%20guests%2C%20and%20turning%20off%20guests%20video.)
   - The request is attempting to modify a restricted slot
   - Moderators can't set *is_live* to **true** when the broadcaster's `is_moderator_send_live_enabled` setting is **false**
 

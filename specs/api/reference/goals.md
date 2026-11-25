@@ -37,10 +37,11 @@ Requires one of the following:
   - `data.type` — String. The type of goal.
     Possible values:
     - `follower`: The goal is to increase followers.
-    - `subscription`: The goal is to increase subscriptions. This type shows the net increase or decrease
-in tier points associated with the subscriptions.
-    - `subscription_count`: The goal is to increase subscriptions. This type shows the net increase or decrease
-in the number of subscriptions.
+    - `subscription`: The goal is to increase subscriptions. This type shows the broadcaster's total tier
+points from subscriptions, which increase and decrease as users subscribe and
+unsubscribe.
+    - `subscription_count`: The goal is to increase subscriptions. This type shows the broadcaster's total number
+of subscriptions, which increases and decreases as users subscribe and unsubscribe.
     - `new_subscription`: The goal is to increase subscriptions. This type shows only the net increase in tier
 points associated with the subscriptions (it does not account for users that
 unsubscribed since the goal started).

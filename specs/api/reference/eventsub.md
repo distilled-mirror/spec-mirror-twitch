@@ -38,8 +38,8 @@ Requires one of the following:
   - `authorization_revoked`: The authorization was revoked for one or more users specified in the Condition object.
   - `moderator_removed`: The moderator that authorized the subscription is no longer one of the broadcaster's
 moderators.
-  - `guest_star_moderator_removed`: The Guest Star moderator that authorized the subscription is no longer one of the
-broadcaster's Guest Star moderators.
+  - `guest_star_moderator_removed`: The [Guest Star moderator](https://help.twitch.tv/s/article/stream-together#settings:~:text=Stream%20Together%20mods%20can%20take%20actions%20like%20inviting%20guests%2C%20reporting%20guests%2C%20removing%20guests%2C%20muting%20guests%2C%20and%20turning%20off%20guests%20video.)
+that authorized the subscription is no longer one of the broadcaster's Guest Star moderators.
   - `user_removed`: One of the users specified in the Condition object was removed.
   - `chat_user_banned`: The user specified in the Condition object was banned from the broadcaster's chat.
   - `version_removed`: The subscription to subscription type and version is no longer supported.
@@ -76,8 +76,8 @@ after a Reconnect Message.
 object.
     - `moderator_removed`: The moderator that authorized the subscription is no longer one of the broadcaster's
 moderators.
-    - `guest_star_moderator_removed`: The Guest Star moderator that authorized the subscription is no longer one of the
-broadcaster's Guest Star moderators.
+    - `guest_star_moderator_removed`: The [Guest Star moderator](https://help.twitch.tv/s/article/stream-together#settings:~:text=Stream%20Together%20mods%20can%20take%20actions%20like%20inviting%20guests%2C%20reporting%20guests%2C%20removing%20guests%2C%20muting%20guests%2C%20and%20turning%20off%20guests%20video.)
+that authorized the subscription is no longer one of the broadcaster's Guest Star moderators.
     - `user_removed`: One of the users specified in the Condition object was removed.
     - `chat_user_banned`: The user specified in the Condition object was banned from the broadcaster's chat.
     - `version_removed`: The subscription to subscription type and version is no longer supported.
